@@ -91,7 +91,12 @@
     <link rel="stylesheet" href="./accset/css/reset.css" />
     <!-- css -->
     <link rel="stylesheet" href="./accset/css/style.css" />
-    <!-- animation -->
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- thư viện AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>shine smile</title>
@@ -126,7 +131,7 @@
         <!-- hero -->
         <section class="hero">
           <!-- hero left -->
-          <section class="hero__content" data-aos="fade-down-right">
+          <section class="hero__content">
             <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
             <p class="hero__desc">
               Exceptional dental care for all ages. Your great smile begins with
@@ -140,7 +145,7 @@
 
           <!-- hero right -->
           <div class="hero__media">
-            <figure class="hero__images" data-aos="fade-up-left">
+            <figure class="hero__images">
               <img
                 src="./accset/img/hero-1.jpg"
                 alt="Exceptional dental.."
@@ -177,9 +182,6 @@
                 src="./accset/img/service.jpg"
                 alt="Our services"
                 class="services__img"
-                data-aos="zoom-in-up"
-                data-aos-anchor="#services__btn--id"
-                data-aos-delay="50"
               />
             </figure>
             <!-- right -->
@@ -257,7 +259,10 @@
                 </div>
               </section>
               <!-- btn all service -->
-              <a href="#!" class="btn services__btn" id="services__btn--id"
+              <a
+                href="#!"
+                class="btn services__btn"
+                data-aos="animate__zoomInLeft animate__delay-1s"
                 >All Services</a
               >
             </div>
@@ -269,7 +274,9 @@
         <div class="container">
           <!-- work top -->
           <div class="works__top">
-            <h2 class="heading-lv2 works__heading">How it works</h2>
+            <h2 class="heading-lv2 works__heading" data-aos="animate__bounceIn">
+              How it works
+            </h2>
             <p class="desc-fs18 works__desc">
               Exceptional dental care for all ages. Your great smile begins with
               a great dentist.
@@ -278,7 +285,7 @@
           <!-- work bottom -->
           <div class="works__list">
             <!-- item 1 -->
-            <section class="works-item" data-aos="flip-up">
+            <section class="works-item" data-aos="animate__fadeInLeft">
               <img
                 src="./accset/img/Orion_search.svg"
                 alt="Orion_search"
@@ -292,7 +299,7 @@
               <a href="#!" class="works-item__more">Learn More</a>
             </section>
             <!-- item 2 -->
-            <section class="works-item" data-aos="flip-up">
+            <section class="works-item" data-aos="animate__fadeInUp">
               <img
                 src="./accset/img/Orion_find-user.svg"
                 alt="Orion_find-user"
@@ -306,7 +313,7 @@
               <a href="#!" class="works-item__more">Learn More</a>
             </section>
             <!-- item 3 -->
-            <section class="works-item" data-aos="flip-up">
+            <section class="works-item" data-aos="animate__fadeInRight">
               <img
                 src="./accset/img/Orion_first-aid-kit.svg"
                 alt="Orion_first-aid-kit"
@@ -738,10 +745,10 @@
     <!-- js animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      // thuộc tính chung của animation( áp dùng toàn bộ)
       AOS.init({
-        delay: 300,
-        mirror: true,
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
       });
     </script>
   </body>
