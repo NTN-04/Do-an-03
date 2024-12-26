@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="./accset/css/reset.css" />
     <!-- css -->
     <link rel="stylesheet" href="./accset/css/style.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>shine smile</title>
   </head>
@@ -124,7 +126,7 @@
         <!-- hero -->
         <section class="hero">
           <!-- hero left -->
-          <section class="hero__content">
+          <section class="hero__content" data-aos="fade-down-right">
             <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
             <p class="hero__desc">
               Exceptional dental care for all ages. Your great smile begins with
@@ -138,7 +140,7 @@
 
           <!-- hero right -->
           <div class="hero__media">
-            <figure class="hero__images">
+            <figure class="hero__images" data-aos="fade-up-left">
               <img
                 src="./accset/img/hero-1.jpg"
                 alt="Exceptional dental.."
@@ -175,6 +177,9 @@
                 src="./accset/img/service.jpg"
                 alt="Our services"
                 class="services__img"
+                data-aos="zoom-in-up"
+                data-aos-anchor="#services__btn--id"
+                data-aos-delay="50"
               />
             </figure>
             <!-- right -->
@@ -252,7 +257,9 @@
                 </div>
               </section>
               <!-- btn all service -->
-              <a href="#!" class="btn services__btn">All Services</a>
+              <a href="#!" class="btn services__btn" id="services__btn--id"
+                >All Services</a
+              >
             </div>
           </div>
         </div>
@@ -271,7 +278,7 @@
           <!-- work bottom -->
           <div class="works__list">
             <!-- item 1 -->
-            <section class="works-item">
+            <section class="works-item" data-aos="flip-up">
               <img
                 src="./accset/img/Orion_search.svg"
                 alt="Orion_search"
@@ -285,7 +292,7 @@
               <a href="#!" class="works-item__more">Learn More</a>
             </section>
             <!-- item 2 -->
-            <section class="works-item">
+            <section class="works-item" data-aos="flip-up">
               <img
                 src="./accset/img/Orion_find-user.svg"
                 alt="Orion_find-user"
@@ -299,7 +306,7 @@
               <a href="#!" class="works-item__more">Learn More</a>
             </section>
             <!-- item 3 -->
-            <section class="works-item">
+            <section class="works-item" data-aos="flip-up">
               <img
                 src="./accset/img/Orion_first-aid-kit.svg"
                 alt="Orion_first-aid-kit"
@@ -727,5 +734,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // thuộc tính chung của animation( áp dùng toàn bộ)
+      AOS.init({
+        delay: 300,
+        mirror: true,
+      });
+    </script>
   </body>
 </html>
