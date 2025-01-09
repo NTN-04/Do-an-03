@@ -177,10 +177,38 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  /* Khối blog */
+  .blog__body {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .blog__list {
+    order: 1;
+  }
+  .blog__content {
+    order: 2;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    /* căn giữa theo trục x */
+    align-items: center;
+  }
+  .blog__heading {
+    width: 86%;
+    text-align: center;
+  }
 }
 
 /* tablet (máy tính bản) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* footer */
+  .footer__tablet--hiden {
+    display: none;
+  }
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 
 /* mobile */
