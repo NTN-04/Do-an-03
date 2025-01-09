@@ -81,6 +81,83 @@
     transform: scale(1.1);
     background-color: #3e4852;
   }
+
+  /* Khối hero */
+  .hero {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .hero__media {
+    /* thứ tự linh hoạt */
+    order: 1;
+  }
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__content {
+    text-align: center;
+    width: 75%;
+    margin: 20px auto;
+  }
+  .hero__heading {
+    width: 100%;
+  }
+  .hero__desc {
+    max-width: 100%;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
+
+  /* Khối services */
+  .services__row {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .services__img {
+    width: 864px;
+  }
+  .services__list {
+    text-align: center;
+  }
+  .services-item {
+    width: 90%;
+    text-align: start;
+  }
+
+  /* Khối Work */
+  .works__list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  /* Khối about */
+  .about-body {
+    flex-direction: column;
+  }
+
+  .about__media {
+    width: 100%;
+  }
+  .about__img--small {
+    display: none;
+  }
+  .about__img--large {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+
+  .works__desc {
+    width: 100%;
+  }
+  .about__content {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 /* tablet (máy tính bản) */
